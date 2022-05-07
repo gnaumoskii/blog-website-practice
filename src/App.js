@@ -1,6 +1,4 @@
-import Header from './Header';
-import Nav from './Nav';
-import Footer from './Footer';
+import Layout from './Layout';
 
 import Home from './Home';
 import NewPost from './NewPost';
@@ -9,14 +7,38 @@ import About from './About';
 
 import Missing from './Missing';
 
-import { Route, Switch, useHistory } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import {Route, Routes,Outlet, useNavigate} from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-     asdas
-    </div>
+    
+     
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="post">
+              <Route index element={<NewPost />} />
+              <Route path="/post/:id" element={<PostPage />} />
+            </Route>
+            <Route path="about" element={<About />} />
+            <Route path="*" element={<Missing />} />
+          </Route> 
+        </Routes>
+ 
+  
+      
+          // <Header />
+          //  <Nav />
+        
+          // <NewPost />
+          // <PostPage />
+          // <About />
+          // <Footer />
+          // <Missing />
+
+     
+
   );
 }
 
