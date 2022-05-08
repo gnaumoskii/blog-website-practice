@@ -1,3 +1,17 @@
-.App {
-    background-color: royalblue;
+body {
+    min-height: 100vh;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    
+}
+
+header {
+    color: white;
+}
+
+.home {
+    position: relative;
+    height: 86vh;
 }
