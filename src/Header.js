@@ -2,9 +2,12 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header>
-        <h1>Header</h1>
+    <div className='row p-0 m-0'>
+    <header className='col-12 bg-dark '>
+        <h1 >Bloggin Website Practice</h1>
     </header>
+    </div>
+
   )
 }
 

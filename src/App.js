@@ -1,3 +1,4 @@
+import './App.css'
 import Layout from './Layout';
 
 import Home from './Home';
@@ -12,8 +13,6 @@ import {Route, Routes,Outlet, useNavigate} from 'react-router-dom';
 
 function App() {
   return (
-    
-     
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -25,20 +24,6 @@ function App() {
             <Route path="*" element={<Missing />} />
           </Route> 
         </Routes>
- 
-  
-      
-          // <Header />
-          //  <Nav />
-        
-          // <NewPost />
-          // <PostPage />
-          // <About />
-          // <Footer />
-          // <Missing />
-
-     
-
   );
 }
 
