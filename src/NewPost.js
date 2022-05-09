@@ -1,10 +1,11 @@
 import React from 'react'
 
 import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const NewPost = ({posts, setPosts}) => {
-  let post = {title:'', date: '',content: ''}
-  let postList = posts;
+const NewPost = ({posts, setPosts, setNewPost, addPost}) => {
+  const navigate = useNavigate();
+  let post = {id:0, title:'', date: '',content: ''}
   const date = new Date();
   const dateString = ('0' + date.getDate()).slice(-2) + '.'
              + ('0' + (date.getMonth()+1)).slice(-2) + '.'
@@ -43,9 +44,10 @@ const NewPost = ({posts, setPosts}) => {
             type='button' 
             className='btn btn-warning' 
             onClick={()=> {
+              post.id = posts.length ? posts[posts.length-1].id + 1 : 1;
               post.date = dateString;
-              postList.push(post);
-              setPosts(postList);
+              addPost(post);
+              navigate('/');
             }}
             > Publish
           </button>

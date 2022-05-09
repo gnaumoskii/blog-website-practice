@@ -14,6 +14,12 @@ header {
  
 }
 
+
+
+.postHeader {
+    display: inline-block ;
+}
+
 .home {
     position: relative;
    
@@ -23,6 +29,8 @@ header {
     margin: 25px;
     width: 50%;
 }
+
+
 
 .post {
     border: 1px solid black;
@@ -42,6 +50,7 @@ header {
 
 .postContainer {
     border-radius: 12px;
+    display: inline-block;
 }
 
 .postDate {
