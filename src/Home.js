@@ -1,10 +1,20 @@
 import React from 'react'
+import Feed from './Feed'
 
-const Home = () => {
+const Home = ({posts}) => {
+
+ // const postList = posts.map(post =>)
+
+
   return (
     <main className='home'>
         <div>
-          Home content
+          {posts.length ? 
+          (<Feed posts={posts} />) : 
+          (<p> No blogs avilable</p>)}
+
+         
+          
         </div>
     </main>
   )

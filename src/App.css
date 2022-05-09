@@ -1,5 +1,7 @@
 body {
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 footer {
     position: fixed;
@@ -9,9 +11,143 @@ footer {
 
 header {
     color: white;
+ 
 }
 
 .home {
     position: relative;
-    height: 86vh;
+   
 }
+
+.newPost {
+    margin: 25px;
+    width: 50%;
+}
+
+.post {
+    border: 1px solid black;
+    border-radius: 16px;
+    box-shadow: 1px 4px rgba(128, 128, 128, 0.354);
+}
+
+.postTitle:hover {
+    color: inherit;
+}
+
+.postTitle {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.postContainer {
+    border-radius: 12px;
+}
+
+.postDate {
+    color: grey;
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+    bottom: 5px;
+    position: relative;
+    left:5px;
+    
+
+}
+
+ul li {
+    display: inline;
+}
+
+
+
+.navmenu {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.navmenu:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+form#searchMenu {
+    position: relative;
+    left: 25px;
+}
+
+.menu {
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+}
+
+input#search {
+    font-size: 24px;
+}
+
+input.inputTitle {
+    font-size: 22px;
+}
+
+.btn {
+    font-size: 22px !important;
+    margin: 7px;
+}
+
+h4 {
+    margin:10px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+li {
+    margin: 5px;
+}
+
+.inputContent {
+    position: relative;
+    width: 700px;
+    height: 585px;
+    font-size: 22px;
+}
+
+.inputContent[placeholder] {
+    padding-bottom: 475px;
+    position: relative;
+    
+}
+
+.inputTitle {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+label[for="search"]
+{
+    display:none;
+}
+
+label[for="content"]
+{
+    display:none;
+}
+
+label[for="title"]
+{
+    display:none;
+}
+
+
+
+
+
