@@ -11,7 +11,7 @@ const Home = ({posts}) => {
         <div>
           {posts.length ? 
           (<Feed posts={posts} />) : 
-          (<p> No blogs avilable</p>)}
+          (<h4 style={{margin:'15px', color:'red'}}> No blogs avilable at the moment</h4>)}
 
          
           

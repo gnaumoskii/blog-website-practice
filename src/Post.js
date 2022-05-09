@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Post = ({key, post}) => {
+const Post = ({post}) => {
   return (
     <div className='post row m-5 p-0'>
         <Link to={'/post/'+post.id} className='postTitle col-6-md'>
