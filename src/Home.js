@@ -1,7 +1,7 @@
 import React from 'react'
 import Feed from './Feed'
 
-const Home = ({posts}) => {
+const Home = ({posts, search}) => {
 
  // const postList = posts.map(post =>)
 
@@ -10,7 +10,7 @@ const Home = ({posts}) => {
     <main className='home'>
         <div>
           {posts.length ? 
-          (<Feed posts={posts} />) : 
+          (<Feed posts={posts} search={search} />) : 
           (<h4 style={{margin:'15px', color:'red'}}> No blogs avilable at the moment</h4>)}
 
          

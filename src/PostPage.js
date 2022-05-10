@@ -1,5 +1,6 @@
 import React from 'react'
-import { useParams , useNavigate } from 'react-router-dom';
+import { useParams , useNavigate, Link } from 'react-router-dom';
+
 
 const PostPage = ({posts, deletePost}) => {
   const {id} = useParams();
@@ -13,7 +14,11 @@ const PostPage = ({posts, deletePost}) => {
           <h1 className='postTitle p-2'>  {post.title}</h1> 
           </div>
           <div className='col-3'>
+          
           <button type='button' className='deletePost btn btn-danger float-end' onClick={()=>{deletePost(post.id); navigate('/')}}> Delete </button>
+          <Link to={'/post/edit/'+post.id}>
+          <button type='button' className='editPost btn btn-warning float-end'> Edit </button>
+          </Link>
           </div>
         </div>
         

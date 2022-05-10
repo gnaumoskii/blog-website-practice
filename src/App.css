@@ -30,7 +30,17 @@ header {
     width: 50%;
 }
 
+.aboutPage {
+    height: 455px;
+    position: relative;
+}
 
+.about {
+    margin: 25px;
+    font-size: 24px;
+    position:relative;
+    margin-top: 25px;
+}
 
 .post {
     border: 1px solid black;
@@ -50,7 +60,7 @@ header {
 
 .postContainer {
     border-radius: 12px;
-    display: inline-block;
+   
 }
 
 .postDate {
