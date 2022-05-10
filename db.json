@@ -1,22 +1,16 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "ss",
-      "date": "10.05.2022",
-      "content": "11asdggg"
-    },
-    {
       "id": 2,
       "title": "aaaa",
       "date": "10.05.2022",
-      "content": "aaa"
+      "content": "aaas"
     },
     {
       "id": 3,
-      "title": "11",
+      "title": "22",
       "date": "10.05.2022",
-      "content": "111"
+      "content": "333"
     },
     {
       "id": 4,
