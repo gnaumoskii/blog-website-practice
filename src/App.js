@@ -14,7 +14,7 @@ import { useState, useEffect } from 'react'
 function App() {
   //States and variables
   const API_URL = 'http://localhost:3500/posts';
-
+  const [isLoading,setIsLoading] = useState(true);
   const [posts,setPosts] = useState([]);
   const [newPost,setNewPost] = useState({})
   const [search,setSearch] = useState('');
@@ -27,13 +27,13 @@ function App() {
         const response = await fetch(API_URL);
         const data = await response.json();
         setPosts(data);
+        setIsLoading(false);
       } catch (err) {
         console.log(err);
       }
     }
 
-    fetchData();
-    
+    (async () => (fetchData()))();
   },[])
 
 const handleSearch = (search) => {
@@ -76,11 +76,11 @@ const handleSearch = (search) => {
 
   };
 
-
+  
   return (
         <Routes>
           <Route path="/" element={<Layout search={search} setSearch={setSearch} handleSearch={handleSearch} />}>
-            <Route index element={<Home posts={posts} search={search} />} />
+            <Route index element={<Home posts={posts} search={search} isLoading={isLoading}/>} />
             <Route path="post">
               <Route index element={<NewPost posts={posts} setPosts={setPosts} setNewPost={setNewPost} addPost={addPost} />} />
               <Route path="/post/:id" element={<PostPage posts={posts} deletePost={deletePost} />}/> 
