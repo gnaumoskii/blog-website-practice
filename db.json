@@ -1,28 +1,28 @@
 {
   "posts": [
     {
-      "id": 2,
-      "title": "aaaa",
+      "id": 1,
+      "title": "First blog!",
       "date": "10.05.2022",
-      "content": "aaas"
+      "content": "This is the first blog on this page."
+    },
+    {
+      "id": 2,
+      "title": "Second ?",
+      "date": "10.05.2022",
+      "content": "Second blog..."
     },
     {
       "id": 3,
-      "title": "22",
+      "title": "Welcome to the page!",
       "date": "10.05.2022",
-      "content": "333"
+      "content": "Welcome to this web application. It is a simple blog website where you can create, edit or delete any blogs. Currently no images are supported.\n"
     },
     {
       "id": 4,
-      "title": "Hello",
+      "title": "Testing",
       "date": "10.05.2022",
-      "content": "Hello this is my first blog."
-    },
-    {
-      "id": 5,
-      "title": "aahahah",
-      "date": "10.05.2022",
-      "content": "ahahah"
+      "content": "Content here !!!"
     }
   ]
 }
